@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="repaso.Page1"  NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="PAGINA 1" HorizontalTextAlignment="Center" TextColor="Red"/>
+            <Image WidthRequest="100" HeightRequest="100" Source="https://www.thegoandroid.com/wp-content/uploads/2021/05/Untitled-10.png"></Image>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    
+                </Grid.ColumnDefinitions>
+                
+            </Grid>
+            <Label Text="Usuario" FontSize="20" Grid.Row="0" Grid.Column="0"></Label>
+
+            <Entry x:Name="txtUsuario" Placeholder="Ingresar el usuario" Grid.Row="0" Grid.Column="1" />
+            
+            <Label Text="Contraseña" FontSize="20" Grid.Row="1" Grid.Column="0"></Label>
+            <Entry x:Name="txtContraseña" Placeholder="Ingresar contraseña" IsPassword="True" Grid.Row="0" Grid.Column="1"></Entry>
+
+            <Button x:Name="btnInicio" Text="Iniciar sesion" Clicked="btnInicio_Clicked" Grid.Row="2" Grid.Column="0"></Button>
+
+
+            <Button x:Name="btnCancelar" Text="Cancelar" Clicked="btnCancelar_Clicked" Grid.Row="1" Grid.Column="1" ></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
